@@ -51,7 +51,7 @@ if __name__ == "__main__":
 
     # Initialize publisher node
     rospy.init_node("camera_info_publisher", anonymous=True)
-    publisher = rospy.Publisher("/jetbot_camera/camera_info", CameraInfo, queue_size=10)
+    publisher = rospy.Publisher("/jetbot_camera/camera_info", CameraInfo, queue_size=1)
     rate = rospy.Rate(10)
 
     # Run publisher
